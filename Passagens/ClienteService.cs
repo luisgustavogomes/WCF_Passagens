@@ -17,8 +17,9 @@ namespace Passagens
         }
 
 
-        public void Add(Cliente c)
+        public void Add(string nome, string cpf)
         {
+            Cliente c = new Cliente() { Nome = nome, Cpf = cpf };
             _dao.Add(c);
         }
 
